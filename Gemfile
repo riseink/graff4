@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-group :development do
-  gem 'heroku-rails'
+group :production do
+  gem 'pg', "0.12.0"
 end
 
 gem 'rails', '3.2.8'
