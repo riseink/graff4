@@ -82,6 +82,14 @@ h2 {
 .meny-arrow {
 	position: absolute;
 	z-index: 10;
+	
+     -moz-transform: rotate(90deg);  /* FF3.5+ */
+       -o-transform: rotate(90deg);  /* Opera 10.5 */
+  -webkit-transform: rotate(90deg);  /* Saf3.1+, Chrome */
+             filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);  /* IE6,IE7 */
+         -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)
+   
+	color: rgba( 255, 255, 255, 1 );
 
 	border: 10px solid transparent;
 
@@ -92,10 +100,10 @@ h2 {
 	        transition: opacity 0.4s ease 0.4s;
 }
 	.meny-left .meny-arrow {
-		left: 14px;
-		top: 50%;
+		
+		left: -29px;
+		top: 60%;
 		margin-top: -16px;
-		border-left: 16px solid #333;
 	}
 	.meny-right .meny-arrow {
 		right: 14px;
